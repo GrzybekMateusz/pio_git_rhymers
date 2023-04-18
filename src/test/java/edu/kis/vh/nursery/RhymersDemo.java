@@ -20,13 +20,13 @@ class RhymersDemo {
             rhymers[3].countIn(rn.nextInt(20));
         
         for (int i = 0; i < rhymers.length; i++) {
-            while (!rhymers[i].callCheck())
+            while (!rhymers[i].checkCall())
                 System.out.print(rhymers[i].countOut() + "  ");
             System.out.println();
         }
         
         System.out.println("total rejected is "
-                + ((HanoiRhymer) rhymers[3]).reportRejected());
+                + ((HanoiRhymer) rhymers[3]).getTotalRejected());
         
     }
     
