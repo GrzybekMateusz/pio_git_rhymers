@@ -4,9 +4,9 @@ public class DefaultCountingOutRhymer {
 
     public static final int NUMBERS_QUANTITY = 12;
     public static final int TOTAL_EMPTY = -1;
-    public static final int TOTAL_FULL = 11;
+    public static final int TOTAL_FULL = NUMBERS_QUANTITY - 1;
     public static final int RETURN_VAL_IF_EMPTY = -1;
-    private int[] numbers = new int[NUMBERS_QUANTITY];
+    private final int[] numbers = new int[NUMBERS_QUANTITY];
 
     public int total = TOTAL_EMPTY;
 
