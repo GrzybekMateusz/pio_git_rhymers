@@ -9,6 +9,8 @@ public class IntLinkedList {
     public static final Node LIST_EMPTY = null;
     public static final boolean LIST_NOT_FULL = false;
     Node last;
+
+    //TODO: Remove this variable or modify code to find usage for it, because it is unused.
     int i;
 
     /**
@@ -33,6 +35,8 @@ public class IntLinkedList {
         return last == LIST_EMPTY;
     }
 
+    //TODO: Introduce size limit and modify or remove this method.
+    //      Currently it always returns false because of lack of the size limit.
     /**
      * Checks if linked list is full.
      * @return boolean value indicating that linked list is not full.
@@ -41,6 +45,7 @@ public class IntLinkedList {
         return LIST_NOT_FULL;
     }
 
+    //TODO: Create exception for empty list, because linked list's node can contain -1.
     /**
      * Returns value of last added number to the linked list.
      * @return last added number to linked list
@@ -52,6 +57,8 @@ public class IntLinkedList {
         return last.getValue();
     }
 
+    //TODO: Create exception for empty list, because linked list's node can contain -1.
+    //      Add spaces between lines to improve readability.
     /**
      * Returns value of last added number to the linked list
      * and removes it from the linked list.

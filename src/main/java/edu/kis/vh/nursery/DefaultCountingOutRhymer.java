@@ -10,6 +10,7 @@ public class DefaultCountingOutRhymer {
 
     private int total = EMPTY_RHYMER_INDICATOR;
 
+    //TODO: Remove unused method or modify code to find usage for it.
     public int getTotal() {
         return total;
     }
@@ -27,12 +28,14 @@ public class DefaultCountingOutRhymer {
         return total == FULL_RHYMER_INDICATOR;
     }
 
+    //TODO: Create exception for handling empty numbers array, because numbers array may store -1
     protected int peekaboo() {
         if (checkCall())
             return RETURN_VAL_IF_EMPTY;
         return numbers[total];
     }
 
+    //TODO: Create exception for handling empty numbers array, because numbers array may store -1
     public int countOut() {
         if (checkCall())
             return RETURN_VAL_IF_EMPTY;
